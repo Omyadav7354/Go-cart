@@ -27,7 +27,7 @@ const ConsumerAuthPage = () => {
 
     try {
       const response = await axios.post(
-        "https://gocart-backend-bfil.onrender.com/consumers",
+        "https://backend-gocart.onrender.com/consumers",
         authData
       );
       localStorage.setItem("consumer_id", JSON.stringify(response.data.data._id));
